@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Report Found Item</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <h2>Lost & Found</h2>
+
+        <div>
+
+            <a href="/">Home</a>
+            <a href="/lost">Report Lost</a>
+            <a href="/found">Report Found</a>
+            <a href="/search">Search</a>
+            <a href="/items">All Items</a>
+
+        </div>
+
+    </nav>
+
+
+    <div class="form-box">
+
+        <h1>Report Found Item</h1>
+
+        {% if message %}
+
+        <p class="success">
+            {{ message }}
+        </p>
+
+        {% endif %}
+
+
+        <form method="POST">
+
+            <label>Item Name</label>
+
+            <input type="text"
+                   name="item"
+                   placeholder="Enter item name"
+                   required>
+
+
+            <label>Found Location</label>
+
+            <input type="text"
+                   name="location"
+                   placeholder="Enter location"
+                   required>
+
+
+            <label>Date</label>
+
+            <input type="date"
+                   name="date"
+                   required>
+
+
+            <label>Contact Number</label>
+
+            <input type="text"
+                   name="contact"
+                   placeholder="Enter contact number"
+                   required>
+
+
+            <button type="submit">
+                Report Found Item
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

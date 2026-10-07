@@ -1,0 +1,288 @@
+/* Basic settings */
+
+body {
+
+    margin: 0;
+
+    font-family: Arial;
+
+    background-color: #f2f4f7;
+
+    color: #222;
+}
+
+
+/* Navigation bar */
+
+nav {
+
+    background-color: #222;
+
+    color: white;
+
+    padding: 18px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 15px;
+
+}
+
+
+nav a:hover {
+
+    color: #00bcd4;
+
+}
+
+
+/* Home page */
+
+.home {
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+}
+
+
+.home h1 {
+
+    font-size: 40px;
+
+}
+
+
+.home p {
+
+    font-size: 18px;
+
+    color: #666;
+
+}
+
+
+/* Buttons */
+
+.buttons {
+
+    margin-top: 30px;
+
+}
+
+
+.button {
+
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    margin: 10px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+}
+
+
+.lost-button {
+
+    background-color: #e74c3c;
+
+}
+
+
+.found-button {
+
+    background-color: #27ae60;
+
+}
+
+
+/* Statistics */
+
+.stats {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 50px;
+
+}
+
+
+.box {
+
+    background-color: white;
+
+    width: 180px;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px #ccc;
+
+}
+
+
+.box h2 {
+
+    font-size: 35px;
+
+}
+
+
+/* Form */
+
+.form-box {
+
+    background-color: white;
+
+    width: 600px;
+
+    max-width: 85%;
+
+    margin: 50px auto;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 10px #ccc;
+
+}
+
+
+.form-box h1 {
+
+    text-align: center;
+
+}
+
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+label {
+
+    margin-top: 15px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+
+}
+
+
+input {
+
+    padding: 12px;
+
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+}
+
+
+button {
+
+    margin-top: 20px;
+
+    padding: 13px;
+
+    background-color: #222;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+}
+
+
+/* Success message */
+
+.success {
+
+    background-color: #d4edda;
+
+    color: #155724;
+
+    padding: 12px;
+
+    border-radius: 5px;
+
+}
+
+
+/* Item cards */
+
+.items-box {
+
+    width: 80%;
+
+    max-width: 900px;
+
+    margin: 40px auto;
+
+}
+
+
+.item {
+
+    background-color: white;
+
+    padding: 20px;
+
+    margin: 15px 0;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 7px #ddd;
+
+}
+
+
+.lost-item {
+
+    border-left: 5px solid #e74c3c;
+
+}
+
+
+.found-item {
+
+    border-left: 5px solid #27ae60;
+
+}

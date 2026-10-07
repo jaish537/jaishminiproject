@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Lost & Found System</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+
+    <nav>
+
+        <h2>Lost & Found</h2>
+
+        <div>
+
+            <a href="/">Home</a>
+
+            <a href="/lost">Report Lost</a>
+
+            <a href="/found">Report Found</a>
+
+            <a href="/search">Search</a>
+
+            <a href="/items">All Items</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Main section -->
+
+    <div class="home">
+
+        <h1>Lost & Found Management System</h1>
+
+        <p>
+            Find and report lost or found items easily.
+        </p>
+
+
+        <div class="buttons">
+
+            <a href="/lost" class="button lost-button">
+                Report Lost Item
+            </a>
+
+            <a href="/found" class="button found-button">
+                Report Found Item
+            </a>
+
+        </div>
+
+
+        <!-- Display total items -->
+
+        <div class="stats">
+
+            <div class="box">
+
+                <h2>{{ lost_count }}</h2>
+
+                <p>Lost Items</p>
+
+            </div>
+
+
+            <div class="box">
+
+                <h2>{{ found_count }}</h2>
+
+                <p>Found Items</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
